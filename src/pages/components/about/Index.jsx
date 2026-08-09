@@ -42,7 +42,7 @@ function About() {
 
   const renderImageContainer = () => (
     <div className={styles.imageContainer}>
-      <Image priority src="/discord.webp" sizes="100%" fill alt="Discord bots and server setup" />
+      <Image priority src="/hii.webp" sizes="100%" fill alt="Discord bots and server setup" />
     </div>
   );
 

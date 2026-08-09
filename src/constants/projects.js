@@ -35,7 +35,7 @@ const projects = [
   {
     id: 'project2',
     title: 'Custom Bots & Server Setup',
-    img: '/discord.webp',
+    img: '/hii.webp',
     overlayImg: '/projects/mcfabazaar_bot.png',
     link: '/projects/project2',
     date: '2025',
@@ -74,7 +74,7 @@ const projects = [
     id: 'project3',
     title: 'Windows Optimization & Script Automation',
     img: '/optimization.webp',
-    overlayImg: '/overlay1.png',
+    overlayImg: '/overlay.png',
     link: '/projects/project3',
     date: '2025',
     company: 'Windows Optimization & Scripting',
@@ -88,12 +88,12 @@ const projects = [
     fluidColor: '#00f2ff',
     images: [
       {
-        src: '/overlay1.png',
+        src: '/overlay.png',
         tag: 'big',
         isRight: false,
       },
       {
-        src: '/projects/windows_opt.png',
+        src: '/overlay.png',
         tag: 'medium',
         isRight: false,
       },

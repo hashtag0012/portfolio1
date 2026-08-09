@@ -10,7 +10,7 @@ const SERVICES = [
   {
     id: '01',
     title: 'Discord Bots & Server Setup',
-    src: '/discord.webp',
+    src: '/hii.webp',
     alt: 'Discord Bots and Server Setup',
     lines: [
       'We offer full Discord server setup and custom bots built to your needs —',
