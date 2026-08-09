@@ -1,11 +1,36 @@
-<div align="center">
+# Portfolio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Team portfolio for Discord bots & server setup, 3D web development, Windows optimization, and custom scripting (Python, C++, C#, and more).
 
-  <h1>Built with AI Studio</h2>
+## Contact
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- Discord: `azozxlowkeyy` · `hexcoder0012` · `aksha.yji`
+- Email: hashimadil001@gmail.com
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Stack
 
-</div>
+Next.js · React Three Fiber · GSAP · SCSS
+
+## Discord profile avatars (optional)
+
+To show live Discord avatars in the contact modal, set:
+
+```bash
+DISCORD_BOT_TOKEN=your_bot_token
+DISCORD_ID_AZO=snowflake_user_id
+DISCORD_ID_HEX=snowflake_user_id
+```
+
+Or expose IDs to the client:
+
+```bash
+NEXT_PUBLIC_DISCORD_ID_AZO=...
+NEXT_PUBLIC_DISCORD_ID_HEX=...
+```
+
+## Scripts
+
+```bash
+npm install
+npm run dev
+```

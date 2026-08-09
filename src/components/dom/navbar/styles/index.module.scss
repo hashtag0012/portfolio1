@@ -1,0 +1,48 @@
+@import '@src/styles/functions';
+
+.root {
+  position: fixed;
+  z-index: 100;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  padding: clamp(1rem, 3.6vw, 3.25rem) clamp(1rem, 3.9vw, 3.5rem) 0;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  pointer-events: none;
+  scale: 1;
+
+  .innerHeader {
+    height: clamp(2.4rem, 3.1vw, 3.5rem);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--layout-columns-gap);
+
+    > a {
+      pointer-events: all;
+      position: absolute;
+      left: 0;
+      max-width: 45%;
+
+      h4 {
+        font-size: clamp(0.95rem, 2.3vw, 2.3vw);
+        white-space: nowrap;
+      }
+    }
+
+    .rightContainer {
+      pointer-events: all;
+      display: flex;
+      gap: clamp(0.5rem, var(--layout-columns-gap), 1.25rem);
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+  }
+}

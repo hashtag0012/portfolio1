@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="redBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ef233c"/>
+      <stop offset="60%" stop-color="#d90429"/>
+      <stop offset="100%" stop-color="#7d0217"/>
+    </radialGradient>
+    <filter id="punkGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="neonShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00ffff" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#redBg)"/>
+
+  <!-- Subtle Halftone/Texture Dots -->
+  <g opacity="0.1" fill="#000000">
+    <circle cx="30" cy="30" r="4"/><circle cx="70" cy="30" r="4"/><circle cx="110" cy="30" r="4"/><circle cx="150" cy="30" r="4"/><circle cx="190" cy="30" r="4"/><circle cx="230" cy="30" r="4"/><circle cx="270" cy="30" r="4"/><circle cx="310" cy="30" r="4"/><circle cx="350" cy="30" r="4"/><circle cx="390" cy="30" r="4"/>
+    <circle cx="30" cy="70" r="4"/><circle cx="70" cy="70" r="4"/><circle cx="110" cy="70" r="4"/><circle cx="150" cy="70" r="4"/><circle cx="190" cy="70" r="4"/><circle cx="230" cy="70" r="4"/><circle cx="270" cy="70" r="4"/><circle cx="310" cy="70" r="4"/><circle cx="350" cy="70" r="4"/><circle cx="390" cy="70" r="4"/>
+    <circle cx="30" cy="110" r="4"/><circle cx="70" cy="110" r="4"/><circle cx="110" cy="110" r="4"/><circle cx="150" cy="110" r="4"/><circle cx="190" cy="110" r="4"/><circle cx="230" cy="110" r="4"/><circle cx="270" cy="110" r="4"/><circle cx="310" cy="110" r="4"/><circle cx="350" cy="110" r="4"/><circle cx="390" cy="110" r="4"/>
+  </g>
+
+  <!-- STARBOY Typography Header -->
+  <g filter="url(#punkGlow)">
+    <text x="200" y="70" font-family="'Impact', 'Arial Black', 'Trebuchet MS', sans-serif" font-size="52" font-weight="900" fill="#facc15" text-anchor="middle" letter-spacing="4" stroke="#ca8a04" stroke-width="1.5">STARBOY</text>
+  </g>
+
+  <!-- Spider-Punk Figure (Facing Left in Profile) -->
+  <g transform="translate(10, 10)" filter="url(#punkGlow)">
+    
+    <!-- Spikes Mohawk (Silver Spikes) -->
+    <!-- Spike 1 (front) -->
+    <polygon points="175,95 190,50 198,92" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <polygon points="190,50 198,92 192,90" fill="#94a3b8"/>
+    <!-- Spike 2 -->
+    <polygon points="200,90 220,35 228,88" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <polygon points="220,35 228,88 221,85" fill="#94a3b8"/>
+    <!-- Spike 3 -->
+    <polygon points="230,92 260,30 258,95" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <polygon points="260,30 258,95 248,93" fill="#cbd5e1"/>
+    <!-- Spike 4 -->
+    <polygon points="260,105 305,55 285,115" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <polygon points="305,55 285,115 280,108" fill="#94a3b8"/>
+    <!-- Spike 5 -->
+    <polygon points="282,125 330,95 298,140" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <polygon points="330,95 298,140 292,130" fill="#64748b"/>
+    <!-- Spike 6 (back lower) -->
+    <polygon points="295,150 340,140 298,175" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+
+    <!-- Head / Mask Base (Tilted Punk Pose) -->
+    <path d="M 150,160 C 130,200 160,260 215,260 C 275,255 295,200 290,140 C 285,95 210,90 170,120 Z" fill="#090a0f" stroke="#1e293b" stroke-width="3"/>
+
+    <!-- Spider-Web Grid Lines on Mask -->
+    <!-- Curved Web Arcs -->
+    <path d="M 160,140 Q 200,165 260,130" stroke="#60a5fa" stroke-width="2.2" fill="none" opacity="0.8"/>
+    <path d="M 145,175 Q 205,205 280,165" stroke="#60a5fa" stroke-width="2.2" fill="none" opacity="0.8"/>
+    <path d="M 155,215 Q 215,240 282,205" stroke="#60a5fa" stroke-width="2.2" fill="none" opacity="0.8"/>
+    <!-- Radial Lines -->
+    <path d="M 165,115 L 210,255" stroke="#93c5fd" stroke-width="2" fill="none" opacity="0.75"/>
+    <path d="M 215,95 L 245,255" stroke="#93c5fd" stroke-width="2" fill="none" opacity="0.75"/>
+    <path d="M 265,105 L 275,230" stroke="#93c5fd" stroke-width="2" fill="none" opacity="0.75"/>
+    <path d="M 140,160 L 270,135" stroke="#93c5fd" stroke-width="2" fill="none" opacity="0.75"/>
+
+    <!-- Giant Iconic White Spider Eye (Profile) -->
+    <path d="M 148,155 C 138,185 145,225 178,245 C 190,235 198,195 192,165 C 185,145 160,145 148,155 Z" fill="#ffffff" stroke="#000000" stroke-width="6"/>
+    <path d="M 152,162 C 145,188 150,220 174,236 C 184,228 190,195 186,170 C 180,154 162,154 152,162 Z" fill="#f8fafc"/>
+
+    <!-- Neck & Studded Choker -->
+    <path d="M 195,250 C 195,250 205,290 200,310 C 235,315 270,305 270,250 Z" fill="#0f172a"/>
+    <!-- Choker studs -->
+    <rect x="200" y="275" width="60" height="14" rx="3" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="210" cy="282" r="3.5" fill="#f1f5f9"/>
+    <circle cx="225" cy="282" r="3.5" fill="#f1f5f9"/>
+    <circle cx="240" cy="282" r="3.5" fill="#f1f5f9"/>
+    <circle cx="253" cy="282" r="3.5" fill="#f1f5f9"/>
+
+    <!-- Punk Leather Jacket / Studded Vest & Electric Blue Shoulder -->
+    <path d="M 160,390 L 175,305 C 190,295 240,290 285,305 L 305,390 Z" fill="#090a0f"/>
+    <!-- Vibrant Blue Punk Arm/Shoulder Patch -->
+    <path d="M 215,310 C 245,300 280,320 280,370 C 265,390 230,390 215,390 Z" fill="#2563eb" opacity="0.9" stroke="#60a5fa" stroke-width="2"/>
+    <ellipse cx="248" cy="345" rx="22" ry="18" fill="#1d4ed8"/>
+    <ellipse cx="248" cy="345" rx="14" ry="10" fill="#3b82f6"/>
+
+    <!-- Metal Studs and Pins on Vest -->
+    <circle cx="185" cy="325" r="4.5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="195" cy="345" r="4.5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="188" cy="368" r="4.5" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="205" cy="330" r="4" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/>
+    <circle cx="200" cy="380" r="3.5" fill="#f8fafc"/>
+  </g>
+</svg>

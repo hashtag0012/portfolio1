@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio",
+  "description": "Portfolio website showcasing 3D web development, discord bots, and optimization projects",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

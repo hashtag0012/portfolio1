@@ -1,0 +1,11 @@
+/* Breakpoints */
+$mobile-breakpoint: 1024px;
+$small-breakpoint: 480px;
+
+// Viewport Sizes
+$desktop-width: 1440px;
+$desktop-height: 850px;
+
+// Match mobile-breakpoint so vw units scale correctly up to tablet
+$mobile-width: 1024px;
+$mobile-height: 800px;

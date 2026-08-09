@@ -1,0 +1,107 @@
+@import '@src/styles/functions';
+
+.root {
+  z-index: 4;
+  height: 100vh;
+  height: calc(100 * var(--svh, 1vh));
+  height: 100svh;
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: clip;
+  background-color: var(--white);
+  padding: 0 var(--layout-margin);
+  opacity: 1 !important;
+
+  @include mobile {
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+  }
+
+  @include small {
+    justify-content: flex-start;
+    padding-top: 5.5rem;
+  }
+}
+
+.centerHeroContainer {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: min(1200px, 100%);
+  width: 100%;
+  pointer-events: auto;
+  opacity: 1 !important;
+}
+
+.topBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1.2rem;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+  font-size: clamp(0.6rem, 1.8vw, 0.75rem);
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: #121214 !important;
+  opacity: 1 !important;
+  margin-bottom: clamp(0.8rem, 2vw, 1.5rem);
+  max-width: 100%;
+
+  @include small {
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.75rem;
+  }
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  background-color: #00ff66;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00ff66;
+}
+
+.mainTypographyTitle {
+  font-family: 'Dela Gothic One', cursive, sans-serif;
+  font-size: clamp(2.6rem, 14vw, 15rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: #121214 !important;
+  opacity: 1 !important;
+  margin: clamp(0.6rem, 2vw, 2rem) 0 0 0;
+  text-transform: uppercase;
+  user-select: none;
+  word-break: break-word;
+}
+
+.subtextDescription {
+  font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+  line-height: 1.65;
+  color: #4a4a50 !important;
+  opacity: 1 !important;
+  font-weight: 400;
+  max-width: min(560px, 100%);
+  margin: clamp(1.2rem, 3vw, 2.6rem) 0 clamp(1.4rem, 2.5vw, 2.4rem) 0;
+  padding: 0 0.25rem;
+}
+
+.ctaButtonWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  opacity: 1 !important;
+  width: 100%;
+}

@@ -1,0 +1,59 @@
+@import '@src/styles/functions';
+
+.root {
+  position: relative;
+  width: 100%;
+  height: clamp(540px, 85vh, 780px);
+  background-color: var(--white);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  @include mobile {
+    height: clamp(420px, 70vh, 560px);
+  }
+
+  .textsContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: clamp(1rem, 2.5vw, 1.8rem);
+    padding: clamp(1.5rem, 3vh, 3rem) 1rem;
+    z-index: 2;
+    pointer-events: none;
+
+    h2 {
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    h6 {
+      color: rgba(40, 40, 43, 0.75);
+      margin: 0;
+    }
+  }
+
+  .canvas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    > div {
+      width: 100% !important;
+      height: 100% !important;
+
+      > div {
+        > canvas {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

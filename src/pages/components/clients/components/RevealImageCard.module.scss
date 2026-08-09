@@ -1,0 +1,55 @@
+.imageCardContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: inherit;
+  overflow: hidden;
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: inherit;
+  border: none !important;
+  outline: none !important;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: none !important;
+  outline: none !important;
+  transform: scale(1.08);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &.imageRevealed {
+    transform: scale(1);
+  }
+
+  .imageCardContainer:hover & {
+    transform: scale(1.04);
+  }
+}
+
+.mask {
+  position: absolute;
+  inset: 0;
+  background-color: var(--white);
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 2;
+  pointer-events: none;
+
+  &.revealed {
+    transform: scaleX(0);
+  }
+}

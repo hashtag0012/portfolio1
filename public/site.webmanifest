@@ -1,0 +1,12 @@
+{
+  "name": "Portfolio",
+  "short_name": "Portfolio",
+  "description": "Discord bots, server setup, 3D web development, Windows optimization, and custom scripting.",
+  "icons": [],
+  "theme_color": "#0e1026",
+  "background_color": "#0e1026",
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait"
+}

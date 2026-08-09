@@ -1,0 +1,558 @@
+@import '@src/styles/functions';
+
+.root {
+  background-color: transparent;
+  color: #f0f4f1;
+  position: relative;
+  width: 100% !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-top: none;
+  z-index: 10;
+}
+
+.waveDivider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: -2px;
+}
+
+.waveSvg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: clamp(100px, 14vw, 180px);
+
+  @include mobile {
+    height: 90px;
+  }
+}
+
+.footerContent {
+  background-color: #0e1026;
+  padding: clamp(1.5rem, 3.5vw, 3rem) clamp(1.25rem, 4vw, 4rem) !important;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+.topBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.6rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 100px;
+  font-size: clamp(0.62rem, 1.8vw, 0.72rem);
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: rgba(240, 244, 241, 0.8);
+  max-width: 100%;
+
+  @include small {
+    letter-spacing: 0.06em;
+    border-radius: 12px;
+  }
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  background-color: #57f287;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #57f287;
+}
+
+.ctaTitle {
+  font-size: clamp(1.8rem, 4.2vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.22;
+  max-width: 860px;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.highlightText {
+  color: #ffdc00;
+  font-style: italic;
+}
+
+.actionHub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 680px;
+  margin-top: 0.5rem;
+}
+
+.emailCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 0.6rem 0.8rem 0.6rem 1rem;
+  flex: 1 1 300px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.emailLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.emailIconBox {
+  color: #ffdc00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailLink {
+  font-size: clamp(0.92rem, 1.8vw, 1.1rem);
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:hover {
+    color: #ffdc00;
+  }
+}
+
+.copyEmailBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #ffdc00;
+    color: #0e1026;
+    border-color: #ffdc00;
+  }
+}
+
+.discordCtaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #5865f2;
+  border: 1px solid #5865f2;
+  color: #ffffff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(88, 101, 242, 0.35);
+
+  &:hover {
+    background: #4752c4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(88, 101, 242, 0.5);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.discordSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.discordLabel {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: rgba(240, 244, 241, 0.5);
+  text-transform: uppercase;
+}
+
+.discordRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.discordChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(88, 101, 242, 0.12);
+  border: 1px solid rgba(88, 101, 242, 0.35);
+  color: #f0f4f1;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  .chipUsername {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .chipStatus {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(240, 244, 241, 0.6);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    background: rgba(88, 101, 242, 0.24);
+    border-color: rgba(88, 101, 242, 0.7);
+    transform: translateY(-1px);
+  }
+
+  &.discordChipCopied {
+    border-color: #57f287;
+    background: rgba(87, 242, 135, 0.15);
+
+    .chipStatus {
+      color: #57f287;
+      background: rgba(87, 242, 135, 0.25);
+    }
+  }
+}
+
+.thankYouContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0;
+}
+
+.thankYouText {
+  font-family: 'Recoleta', Georgia, serif;
+  font-size: clamp(2.6rem, 16vw, 17rem);
+  text-align: center;
+  line-height: 0.85;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  user-select: none;
+  opacity: 0.95;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  @include small {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gridCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.topCol {
+  align-items: flex-end;
+
+  @include mobile {
+    align-items: flex-start;
+  }
+}
+
+.colHeader {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: #8e909a;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  a {
+    color: rgba(240, 244, 241, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      color: #ffdc00;
+      transform: translateX(2px);
+    }
+  }
+}
+
+.serviceLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: rgba(240, 244, 241, 0.85);
+
+  .arrowIcon {
+    opacity: 0.5;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  &:hover .arrowIcon {
+    opacity: 1;
+    transform: translate(2px, -2px);
+  }
+}
+
+.legalLink {
+  color: rgba(240, 244, 241, 0.75);
+  font-size: 0.88rem;
+
+  &:hover {
+    color: #57f287 !important;
+  }
+}
+
+.infoText {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.infoSubText {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(240, 244, 241, 0.65);
+}
+
+.timeCard {
+  margin-top: 0.4rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: fit-content;
+}
+
+.timeLabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: rgba(240, 244, 241, 0.5);
+  text-transform: uppercase;
+}
+
+.timeValue {
+  color: #ffdc00;
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.goTopWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.returnTopHint {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: rgba(240, 244, 241, 0.5);
+  text-transform: uppercase;
+}
+
+/* Circle button styling for GoTop */
+.circleButton {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    background: #ffdc00;
+    border-color: #ffdc00;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(255, 220, 0, 0.25);
+
+    .arrowClassic path {
+      fill: #0e1026;
+    }
+  }
+}
+
+.arrowClassic {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+  z-index: 2;
+  position: relative;
+
+  path {
+    fill: #ffffff;
+    transition: fill 0.25s ease;
+  }
+}
+
+.ball {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #ffdc00;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
+
+.bottomLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.copyText {
+  font-size: 0.72rem;
+  color: rgba(240, 244, 241, 0.7);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.copySub {
+  font-size: 0.65rem;
+  color: rgba(240, 244, 241, 0.45);
+  letter-spacing: 0.1em;
+}
+
+.bottomRight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.bottomLegalLink {
+  font-size: 0.75rem;
+  color: rgba(240, 244, 241, 0.7);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #ffdc00;
+  }
+}
+
+.dotSeparator {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.75rem;
+}
+
+.designedBy {
+  font-size: 0.72rem;
+  color: rgba(240, 244, 241, 0.45);
+  letter-spacing: 0.06em;
+}

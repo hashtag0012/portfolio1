@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="warmBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="60%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </radialGradient>
+    <linearGradient id="blondeHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#fde047"/>
+      <stop offset="85%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="hairShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <linearGradient id="amberEye" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="45%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#78350f" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#warmBg)"/>
+
+  <!-- Sparkle Stars (Anime effect) -->
+  <g fill="#f59e0b" opacity="0.85">
+    <path d="M 350,70 Q 350,90 370,90 Q 350,90 350,110 Q 350,90 330,90 Q 350,90 350,70 Z"/>
+    <path d="M 380,140 Q 380,150 390,150 Q 380,150 380,160 Q 380,150 370,150 Q 380,150 380,140 Z" transform="scale(0.8) translate(70, -20)"/>
+    <path d="M 60,90 Q 60,100 70,100 Q 60,100 60,110 Q 60,100 50,100 Q 60,100 60,90 Z" transform="scale(0.7) translate(20, 20)"/>
+  </g>
+
+  <!-- Main Character -->
+  <g id="character" filter="url(#softGlow)">
+    <!-- Back Hair Strands -->
+    <path d="M 100,160 C 70,220 90,290 120,310 C 100,270 105,210 120,180 Z" fill="url(#hairShadow)"/>
+    <path d="M 300,160 C 330,220 310,290 280,310 C 300,270 295,210 280,180 Z" fill="url(#hairShadow)"/>
+
+    <!-- Neck & Shoulders -->
+    <path d="M 165,270 L 165,340 C 130,355 70,380 50,400 L 350,400 C 330,380 270,355 235,340 L 235,270 Z" fill="#ffedd5"/>
+    <!-- Neck Shadow -->
+    <path d="M 165,270 C 185,305 215,305 235,270 L 225,320 C 205,335 195,335 175,320 Z" fill="#fed7aa"/>
+
+    <!-- Collarbone & Muscle Lines -->
+    <path d="M 185,340 L 175,370" stroke="#fba979" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 215,340 L 225,370" stroke="#fba979" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Clothes: White T-Shirt & Teal Apron Strap -->
+    <path d="M 60,400 C 70,380 120,360 170,360 C 220,360 270,380 340,400 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <!-- Apron Straps (Teal/Cyan) -->
+    <path d="M 115,365 L 135,400 L 105,400 Z" fill="#0d9488"/>
+    <path d="M 285,365 L 295,400 L 265,400 Z" fill="#0d9488"/>
+
+    <!-- Face Base -->
+    <path d="M 115,160 C 115,250 150,305 200,305 C 250,305 285,250 285,160 C 285,100 240,80 200,80 C 160,80 115,100 115,160 Z" fill="#ffedd5"/>
+
+    <!-- Soft Cheeks Blush -->
+    <ellipse cx="145" cy="235" rx="18" ry="8" fill="#fda4af" opacity="0.6"/>
+    <path d="M 135,230 L 140,240 M 145,230 L 150,240 M 155,230 L 160,240" stroke="#f43f5e" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+    <ellipse cx="255" cy="235" rx="18" ry="8" fill="#fda4af" opacity="0.6"/>
+    <path d="M 245,230 L 250,240 M 255,230 L 260,240 M 265,230 L 270,240" stroke="#f43f5e" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Eyes (Warm Amber / Anime Style) -->
+    <!-- Left Eye -->
+    <g transform="translate(130, 180)">
+      <!-- Upper Lash Line -->
+      <path d="M 0,22 Q 22,2 45,16" stroke="#451a03" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M 5,20 Q 22,5 42,16" stroke="#78350f" stroke-width="2" fill="none"/>
+      <!-- Iris -->
+      <ellipse cx="24" cy="24" rx="13" ry="15" fill="url(#amberEye)"/>
+      <!-- Pupil & Ring -->
+      <ellipse cx="24" cy="24" rx="7" ry="8" fill="#451a03"/>
+      <circle cx="24" cy="24" r="5" fill="#78350f"/>
+      <!-- Highlight Reflection -->
+      <circle cx="28" cy="18" r="4.5" fill="#ffffff"/>
+      <circle cx="19" cy="28" r="2.5" fill="#ffffff" opacity="0.8"/>
+      <!-- Lower Lash -->
+      <path d="M 10,38 Q 24,42 38,36" stroke="#78350f" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Eye -->
+    <g transform="translate(225, 180)">
+      <!-- Upper Lash Line -->
+      <path d="M 0,16 Q 23,2 45,22" stroke="#451a03" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M 3,16 Q 23,5 40,20" stroke="#78350f" stroke-width="2" fill="none"/>
+      <!-- Iris -->
+      <ellipse cx="21" cy="24" rx="13" ry="15" fill="url(#amberEye)"/>
+      <!-- Pupil & Ring -->
+      <ellipse cx="21" cy="24" rx="7" ry="8" fill="#451a03"/>
+      <circle cx="21" cy="24" r="5" fill="#78350f"/>
+      <!-- Highlight Reflection -->
+      <circle cx="25" cy="18" r="4.5" fill="#ffffff"/>
+      <circle cx="16" cy="28" r="2.5" fill="#ffffff" opacity="0.8"/>
+      <!-- Lower Lash -->
+      <path d="M 7,36 Q 21,42 35,38" stroke="#78350f" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Eyebrows (Blonde expressive arcs) -->
+    <path d="M 130,172 Q 155,158 178,168" stroke="#b45309" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M 222,168 Q 245,158 270,172" stroke="#b45309" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Nose (Small refined anime tick) -->
+    <path d="M 198,225 L 202,238 L 195,240" stroke="#b45309" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Mouth: Playful, Happy Smile with Small Fang (Denji style) -->
+    <g transform="translate(180, 260)">
+      <path d="M 0,5 Q 20,28 40,5 Z" fill="#881337" stroke="#451a03" stroke-width="2.5"/>
+      <!-- Tongue / Teeth -->
+      <path d="M 5,6 Q 20,12 35,6 Z" fill="#ffffff"/>
+      <!-- Cute small fang on right side -->
+      <polygon points="26,6 30,13 33,6" fill="#ffffff" stroke="#451a03" stroke-width="0.8"/>
+      <path d="M 10,18 Q 20,26 30,18" fill="#fb7185"/>
+      <path d="M -3,5 Q 0,2 3,5" stroke="#451a03" stroke-width="2" fill="none"/>
+      <path d="M 37,5 Q 40,2 43,5" stroke="#451a03" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Sweat Drop (Anime cute detail) -->
+    <path d="M 310,215 C 310,215 318,228 318,235 C 318,240 314,244 310,244 C 306,244 302,240 302,235 C 302,228 310,215 310,215 Z" fill="#38bdf8" opacity="0.85"/>
+
+    <!-- Blonde Layered Spiky Anime Hair (Foreground) -->
+    <g fill="url(#blondeHair)" stroke="#a16207" stroke-width="1.8" stroke-linejoin="round">
+      <!-- Top spikes -->
+      <path d="M 200,45 C 160,40 100,70 80,120 C 60,170 65,220 85,250 C 95,210 95,150 120,120 C 135,100 165,80 200,80 C 235,80 265,100 280,120 C 305,150 305,210 315,250 C 335,220 340,170 320,120 C 300,70 240,40 200,45 Z"/>
+      
+      <!-- Crown messy Tufts -->
+      <path d="M 170,50 L 185,25 L 205,52 Z"/>
+      <path d="M 205,52 L 230,22 L 245,55 Z"/>
+      <path d="M 140,70 L 145,35 L 175,60 Z"/>
+      <path d="M 245,55 L 275,35 L 270,75 Z"/>
+      <path d="M 100,105 L 90,65 L 125,95 Z"/>
+      <path d="M 300,105 L 315,65 L 280,95 Z"/>
+
+      <!-- Bangs Framing the Face -->
+      <!-- Center Bangs -->
+      <path d="M 185,80 L 195,185 L 210,125 L 225,180 L 235,90 Z" fill="url(#blondeHair)"/>
+      <path d="M 160,85 L 165,160 L 185,120 Z"/>
+      <path d="M 235,90 L 255,165 L 260,110 Z"/>
+
+      <!-- Side Bangs -->
+      <path d="M 115,115 L 130,205 L 148,155 Z"/>
+      <path d="M 285,115 L 270,205 L 252,155 Z"/>
+      <path d="M 85,165 L 110,240 L 120,195 Z"/>
+      <path d="M 315,165 L 290,240 L 280,195 Z"/>
+    </g>
+
+    <!-- Hair Highlights (Bright pale gold glow) -->
+    <path d="M 130,95 Q 160,85 190,95" stroke="#fef9c3" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 210,95 Q 240,85 270,95" stroke="#fef9c3" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 185,120 L 192,160" stroke="#fef9c3" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+@import '@src/styles/functions';
+
+.title {
+  width: 68%;
+  line-height: 1.45;
+  font-weight: 500;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  // Highlight key technical terms as words assemble during scroll
+  :global(.word) {
+    transition: color 0.3s ease;
+  }
+}
