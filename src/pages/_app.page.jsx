@@ -67,7 +67,6 @@ function MyApp({ Component, pageProps, router }) {
     });
 
     setLenis(lenis);
-    // No loader, start scroll immediately
 
     return () => {
       lenis.destroy();

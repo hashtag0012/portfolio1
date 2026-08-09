@@ -3,19 +3,16 @@ const FALLBACK = [
     username: 'azozxlowkeyy',
     global_name: 'azozxlowkeyy',
     id: process.env.DISCORD_ID_AZO || process.env.NEXT_PUBLIC_DISCORD_ID_AZO || '',
-    avatarUrl: '/avatars/azozxlowkeyy.svg',
   },
   {
     username: 'aksha.yji',
     global_name: 'akshay',
     id: process.env.DISCORD_ID_AKSHA || process.env.NEXT_PUBLIC_DISCORD_ID_AKSHA || '',
-    avatarUrl: '/avatars/aksha_yji.svg',
   },
   {
     username: 'hexcoder0012',
     global_name: 'hexcoder',
     id: process.env.DISCORD_ID_HEX || process.env.NEXT_PUBLIC_DISCORD_ID_HEX || '',
-    avatarUrl: '/avatars/hexcoder0012.svg',
   },
 ];
 
@@ -29,7 +26,6 @@ async function fetchDiscordUser(id, token) {
     id: data.id,
     username: data.username,
     global_name: data.global_name || data.username,
-    avatar: data.avatar,
   };
 }
 

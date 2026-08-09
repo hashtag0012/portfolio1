@@ -1,28 +1,11 @@
-/* eslint-disable no-bitwise */
 import { useCallback, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import gsap from 'gsap';
-import { X, Copy, Check, Mail } from 'lucide-react';
+import { X, Copy, Check, Mail, MessageSquare } from 'lucide-react';
 import styles from '@src/components/dom/navbar/styles/contactModal.module.scss';
 import { useShallow } from 'zustand/react/shallow';
 import { useStore } from '@src/store';
 import DISCORD_PROFILES from '@src/constants/discord';
-
-function avatarUrl(profile) {
-  if (profile.avatarUrl) {
-    return profile.avatarUrl;
-  }
-  if (profile.avatar && profile.id) {
-    return `https://cdn.discordapp.com/avatars/${profile.id}/${profile.avatar}.png?size=128`;
-  }
-  if (profile.id && /^\d+$/.test(String(profile.id))) {
-    const id = String(profile.id);
-    const high = parseInt(id.slice(0, -10) || '0', 10);
-    const idx = high % 6;
-    return `https://cdn.discordapp.com/embed/avatars/${idx}.png`;
-  }
-  return null;
-}
 
 function ContactModal() {
   const [isContactOpen, setIsContactOpen, lenis] = useStore(useShallow((state) => [state.isContactOpen, state.setIsContactOpen, state.lenis]));
@@ -135,7 +118,6 @@ function ContactModal() {
 
         <div className={styles.cards}>
           {profiles.map((profile) => {
-            const src = avatarUrl(profile);
             const isCardCopied = copied === profile.username;
             return (
               <button
@@ -145,13 +127,8 @@ function ContactModal() {
                 onClick={() => copyUsername(profile.username)}
                 title={`Copy @${profile.username}`}
               >
-                <div className={styles.avatar}>
-                  {src ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={src} alt={profile.username} width={64} height={64} />
-                  ) : (
-                    <span className={styles.avatarFallback}>{profile.username.slice(0, 2).toUpperCase()}</span>
-                  )}
+                <div className={styles.discordIconBox}>
+                  <MessageSquare size={18} className={styles.discordIcon} />
                 </div>
                 <div className={styles.meta}>
                   <div className={styles.nameRow}>

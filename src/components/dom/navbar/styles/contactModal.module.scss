@@ -167,33 +167,23 @@
   }
 }
 
-.avatar {
-  width: 3.2rem;
-  height: 3.2rem;
+.discordIconBox {
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 10px;
-  overflow: hidden;
-  background: #5865f2;
+  background: rgba(88, 101, 242, 0.2);
+  border: 1px solid rgba(88, 101, 242, 0.35);
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
   @include small {
     grid-row: 1 / 3;
   }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
-.avatarFallback {
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+.discordIcon {
+  color: #7289da;
 }
 
 .meta {
