@@ -14,7 +14,7 @@ function Footer() {
   const [copied, setCopied] = useState(false);
   const [copiedUser, setCopiedUser] = useState('');
   const setIsContactOpen = useStore((state) => state.setIsContactOpen);
-  const email = 'hashimadil001@gmail.com';
+  const email = 'primevault34@gmail.com';
 
   const handleCopyEmail = (e) => {
     e.stopPropagation();

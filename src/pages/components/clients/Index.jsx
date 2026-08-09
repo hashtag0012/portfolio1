@@ -32,7 +32,7 @@ const SERVICES = [
   {
     id: '03',
     title: 'Windows Optimization',
-    src: '/projects/windows_opt.png',
+    src: '/optimization.webp',
     alt: 'Windows Optimization',
     lines: [
       'We tune your Windows OS for maximum FPS, lower latency, debloated registry, and',

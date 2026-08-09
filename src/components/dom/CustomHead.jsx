@@ -9,7 +9,7 @@ const getSchema = () => ({
   '@type': 'Organization',
   name: 'Portfolio',
   url: SITE_URL || undefined,
-  email: 'mailto:hashimadil001@gmail.com',
+  email: 'mailto:primevault34@gmail.com',
   description: 'Discord bots, server setup, 3D web development, Windows optimization, and custom scripting.',
 });
 

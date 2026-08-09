@@ -137,9 +137,9 @@ function PrivacyPage() {
                 <MessageSquare size={16} />
                 <span>Message on Discord</span>
               </button>
-              <a href="mailto:hashimadil001@gmail.com" className={styles.contactBtn}>
+              <a href="mailto:primevault34@gmail.com" className={styles.contactBtn}>
                 <Mail size={16} />
-                <span>hashimadil001@gmail.com</span>
+                <span>primevault34@gmail.com</span>
               </a>
             </div>
           </div>

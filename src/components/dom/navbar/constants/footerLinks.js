@@ -1,7 +1,7 @@
 const footerLinks = [
   {
     title: 'Email Us',
-    href: 'mailto:hashimadil001@gmail.com',
+    href: 'mailto:primevault34@gmail.com',
   },
 ];
 export default footerLinks;

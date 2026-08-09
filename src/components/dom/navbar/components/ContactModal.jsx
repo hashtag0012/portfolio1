@@ -89,7 +89,7 @@ function ContactModal() {
   const copyEmail = useCallback(async (e) => {
     e.preventDefault();
     try {
-      await navigator.clipboard.writeText('hashimadil001@gmail.com');
+      await navigator.clipboard.writeText('primevault34@gmail.com');
       setEmailCopied(true);
       setTimeout(() => setEmailCopied(false), 2000);
     } catch {
@@ -155,9 +155,9 @@ function ContactModal() {
         </div>
 
         <div className={styles.footerRow}>
-          <a className={styles.emailFallback} href="mailto:hashimadil001@gmail.com">
+          <a className={styles.emailFallback} href="mailto:primevault34@gmail.com">
             <Mail size={15} />
-            <span>hashimadil001@gmail.com</span>
+            <span>primevault34@gmail.com</span>
           </a>
           <button type="button" className={styles.copyEmailBtn} onClick={copyEmail}>
             {emailCopied ? 'COPIED' : 'COPY'}

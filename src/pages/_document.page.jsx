@@ -14,7 +14,6 @@ export default class MyDocument extends Document {
           <link href="/fonts/NeueHaasDisplayMedium.woff2" as="font" type="font/woff2" />
           <link href="/fonts/NeueHaasDisplayRoman.woff2" as="font" type="font/woff2" />
           <link href="/fonts/NeueHaasDisplayRomanItalic.woff2" as="font" type="font/woff2" />
-          <link rel="preload" as="image" href="/motherboard_opt.png" />
           <link rel="preload" as="image" href="/overlay1.png" />
           <link rel="preload" as="image" href="/optimization.webp" />
           <link rel="preload" as="image" href="/script.webp" />

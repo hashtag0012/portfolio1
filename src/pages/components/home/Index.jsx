@@ -5,8 +5,6 @@ import clsx from 'clsx';
 import styles from '@src/pages/components/home/styles/home.module.scss';
 import { useStore } from '@src/store';
 
-import MotherboardDecoration from '@src/pages/components/home/components/MotherboardDecoration';
-
 const NeonSphereCanvas = dynamic(() => import('@src/pages/components/home/components/NeonSphereCanvas'), { ssr: false });
 
 function Home() {
@@ -16,7 +14,6 @@ function Home() {
 
   return (
     <section ref={rootRef} className={clsx(styles.root)}>
-      <MotherboardDecoration />
       <NeonSphereCanvas />
 
       <div className={styles.centerHeroContainer}>
