@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import dynamic from 'next/dynamic';
 import ButtonLink from '@src/components/animationComponents/buttonLink/Index';
+import Image from 'next/image';
 import clsx from 'clsx';
 import styles from '@src/pages/components/home/styles/home.module.scss';
 import { useStore } from '@src/store';
@@ -41,6 +42,16 @@ function Home() {
             }}
           />
         </div>
+      </div>
+
+      <div className={styles.motherboardContainer}>
+        <Image
+          src="/motherboard.png"
+          alt="Motherboard"
+          fill
+          sizes="100%"
+          priority
+        />
       </div>
     </section>
   );

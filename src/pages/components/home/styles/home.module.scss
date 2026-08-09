@@ -105,3 +105,27 @@
   opacity: 1 !important;
   width: 100%;
 }
+
+.motherboardContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+  
+  img {
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  
+  @include mobile {
+    height: 30%;
+  }
+  
+  @include small {
+    height: 25%;
+  }
+}

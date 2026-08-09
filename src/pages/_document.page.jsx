@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
           <link rel="preload" as="image" href="/script.webp" />
           <link rel="preload" as="image" href="/hii.webp" />
           <link rel="preload" as="image" href="/3d.webp" />
+          <link rel="preload" as="image" href="/motherboard.png" />
         </Head>
         <body>
           <Main />
