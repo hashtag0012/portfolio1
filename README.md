@@ -4,7 +4,7 @@ Team portfolio for Discord bots & server setup, 3D web development, Windows opti
 
 ## Contact
 
-- Discord: `azozxlowkeyy` · `hexcoder0012` · `aksha.yji`
+- Discord: `azozxlowkeyy` · `hexcoder0012`
 - Email: hashimadil001@gmail.com
 
 ## Stack
